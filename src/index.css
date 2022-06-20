@@ -1,13 +1,167 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main_div{
+    width: fit-content;
+    max-width: 95vw;
+    max-height: 95vh;
+    height: fit-content;
+    display: block;
+    position: absolute;
+    background-color: aquamarine;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 10px;
+    border: 1px solid red;
+    border-radius: 15px;
+    z-index: 1000;
+    overflow-y: scroll;
+
 }
+.headline{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    text-align: center;
+}
+.inputfield{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.remove{
+    cursor: pointer;
+    position: relative;
+    width: 25px;
+    height: min-content;
+    border-radius: 75%;
+    border: 1px solid black;
+    text-align: center;
+    font-size: large;
+    background-color: beige;
+    border: 1px solid red;
+    
+}
+
+.cin{
+    padding: 5px;
+    text-align: center;
+    font-size: large;
+    width: 65%;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid aqua;
+}
+
+.cin:focus{
+    background-color: rgb(230, 247, 241);
+}
+
+
+.content{
+    display: flex;
+}
+
+.itemname{
+    position: relative;
+    width:80% ;
+    padding: 1px 5px ;
+    margin: 2px 0;
+    min-width: 75%;
+    margin-left: 5px;
+    margin-right: 5px;
+    overflow-wrap: break-word;
+    contain: content;
+    align-self: center;
+    text-align: center;
+    background-color: bisque;
+    border-radius: 10px;
+}
+.serial{
+    margin-top: 2.5px;
+    width: 6%;
+}
+
+.addbtn{
+    margin: 0 5px;
+    padding: 5px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(60, 196, 196);
+    font-weight: 900;
+    font-size: x-large;
+    cursor: pointer
+}
+.clearall{
+    margin-top: 10px;
+    position: relative;
+    padding: 3px 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    width: fit-content;
+    border-radius: 5px;
+    left: 50%;    
+    background-color: rgb(226, 133, 133);
+    transform: translate(-50%);
+}
+.clearall:hover{
+    background-color: rgb(245, 33, 33);
+    color: white;
+}
+
+
+.addbtn:hover{
+    background-color: gray;
+    color: aqua;
+}
+.remove:hover{
+    background-color: red;
+    color: white;
+}
+.itemname:hover{
+    
+    background-color: rgb(253, 246, 237);
+}
+@media screen and (max-width:400px) {
+    *{
+        font-size: medium;
+    }
+    .main_div{
+        width: 90vw;
+        height: auto;
+        min-height: 90vh;
+    }
+    .itemname{
+        width: 90vw;
+    }
+    .remove{
+        margin: 2px ;
+    }
+    
+}
+.popup{
+    padding: 5px;
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    background-color: orange;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1000;
+}
+
+/* scroll bar styling */
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+/* ////////////////// */
