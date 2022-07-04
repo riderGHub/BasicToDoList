@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ToDolists from "./toDolists";
 import "../index.css";
+import { AddCircle } from "@material-ui/icons";
 
 const Listpage = () => {
   const [inputlist, setinput] = useState([]);
@@ -42,8 +43,8 @@ const Listpage = () => {
           />
 
           <button className="addbtn" onClick={Add} title="Add to list">
-            {" "}
-            +
+            <i class="fas fa-solid fa-plus"></i>
+            
           </button>
         </div>
         <ol>

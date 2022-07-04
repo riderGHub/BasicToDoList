@@ -15,8 +15,8 @@
     left: 50%;
     transform: translate(-50%,-50%);
     padding: 10px;
-    border: 1px solid red;
-    border-radius: 15px;
+    border: 1px solid blueviolet;
+    border-radius: 5px;
     z-index: 1000;
     overflow-y: scroll;
 
@@ -37,12 +37,12 @@
     position: relative;
     width: 25px;
     height: min-content;
-    border-radius: 75%;
+    border-radius: 5px;
     border: 1px solid black;
     text-align: center;
     font-size: large;
-    background-color: beige;
-    border: 1px solid red;
+    color: rgb(4, 4, 61);
+    border: none;
     
 }
 
@@ -88,12 +88,13 @@
 .addbtn{
     margin: 0 5px;
     padding: 5px;
-    border-radius: 8px;
+    border-radius: 25%;
     border: none;
-    background-color: rgb(60, 196, 196);
+    color: white;
+    background-color: rgb(122, 122, 194);
     font-weight: 900;
     font-size: x-large;
-    cursor: pointer
+    cursor: pointer;
 }
 .clearall{
     margin-top: 10px;
@@ -114,12 +115,11 @@
 
 
 .addbtn:hover{
-    background-color: gray;
+    background-color: blueviolet;
     color: aqua;
 }
 .remove:hover{
-    background-color: red;
-    color: white;
+    color: red;
 }
 .itemname:hover{
     
