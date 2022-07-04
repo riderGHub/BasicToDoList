@@ -1,16 +1,26 @@
 *{
     margin: 0;
     padding: 0;
+    
+}
+
+.pageBody{
+
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(135deg, rgba(255, 255, 0, 0.5) 10%, rgba(0, 0, 255, 0.5) 20%);
+    
 }
 
 .main_div{
     width: fit-content;
     max-width: 95vw;
     max-height: 95vh;
+    min-height: 100px;
     height: fit-content;
     display: block;
     position: absolute;
-    background-color: aquamarine;
+    background-image: radial-gradient(aqua 75%,blueviolet , green 99%);
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -25,11 +35,16 @@
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 800;
     text-align: center;
+    
 }
 .inputfield{
     display: flex;
     justify-content: center;
     margin: 10px;
+}
+.emoji{
+    text-align: center;
+    font-size: x-large;
 }
 
 .remove{
@@ -87,7 +102,7 @@
 
 .addbtn{
     margin: 0 5px;
-    padding: 5px;
+    padding: 2px;
     border-radius: 25%;
     border: none;
     color: white;
@@ -132,7 +147,7 @@
     .main_div{
         width: 90vw;
         height: auto;
-        min-height: 90vh;
+        min-height: 200px;
     }
     .itemname{
         width: 90vw;
