@@ -8,24 +8,25 @@
 
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(135deg, rgba(255, 255, 0, 0.5) 10%, rgba(0, 0, 255, 0.5) 20%);
+    background-image: linear-gradient(135deg, rgba(255, 255, 0, 0.5) 10%, rgb(228, 225, 225) 20%);
     
 }
 
 .main_div{
     width: fit-content;
-    max-width: 95vw;
+    max-width: 400px;
+    min-width: 380px;
     max-height: 95vh;
     min-height: 100px;
     height: fit-content;
     display: block;
     position: absolute;
-    background-image: radial-gradient(aqua 75%,blueviolet , green 99%);
+    background-image: radial-gradient(aqua 75%,white , green 99%);
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     padding: 10px;
-    border: 1px solid blueviolet;
+    /* border: 1px solid blueviolet; */
     border-radius: 5px;
     z-index: 1000;
     overflow-y: scroll;
